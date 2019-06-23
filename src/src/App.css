@@ -1,6 +1,10 @@
 *{
   box-sizing: border-box;
 }
+
+body {
+
+}
 body {
   font-family: lato,helvetica neue,Helvetica,Arial,sans-serif;
 font-size: 16px;
@@ -9,10 +13,12 @@ color: #484043;
 -webkit-font-smoothing: antialiased;
 text-rendering: optimizeLegibility;
 font-variant-ligatures: common-ligatures;
+
 }
 
 .App {
   text-align: center;
+  /* background-color: lightgrey; */
 }
 
 .App-header {
@@ -28,12 +34,16 @@ font-variant-ligatures: common-ligatures;
 /* style for job */
 
 .job-macro{
+  margin: auto;
   display: block;
   padding: 0.8rem 0.8rem 1.3rem;
   border-bottom: 1px solid #e2dfdd;
   color: #484043;
-  width: 100%;
+  width: 70%;
   text-decoration: none;
+}
+.job-title {
+
 }
 
 .button, .apply-btn, .login-btn, .signup-btn {
@@ -43,21 +53,41 @@ font-variant-ligatures: common-ligatures;
   margin-left: 1rem;
   font-weight: bold;
   cursor: pointer;
+  font-size: 1.3rem;
+}
+.button-update {
+  padding: 0.2rem 1rem;
+  background-color: #6e6568;
+  color: white;
+  margin-left: 32%;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.3rem;
+  text-align: center;
 }
 .job-search{
   margin: 0 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .container {
-  margin: 1rem 9rem;
+  /* margin-top: -5rem; */
+  border-right: 1px solid #e2dfdd;;
+  border-left: 1px solid #e2dfdd;;
+  margin:0 auto;
+  /* margin: 1rem 9rem; */
+  max-width: 800px;
+  /* background-color: #fff; */
 }
 .describe {
   max-width: 500px;
+  text-align: justify;
 }
 h3 {
   text-align: center;
 }
 .applied-job {
-  text-align: center;
+  /* text-align: center; */
   margin-right: 5rem;
 }
 .resume {
@@ -67,10 +97,12 @@ h3 {
   margin-left: 43rem;
 }
 .grid-container{
+  max-width: 800px;
   display: grid;
   grid-template-row: auto auto auto;
   grid-auto-rows: auto auto auto;
   justify-content: center;
+  margin: auto;
 }
 .grid-item {
   padding: 3rem;
@@ -78,7 +110,8 @@ h3 {
 }
 .grid-input{
   text-align: center;
-  width: 12rem;
+  width: 20rem;
+  padding: 0.5rem;
 }
 .apply-btn {
   margin-left:8rem;
@@ -105,7 +138,8 @@ h3 {
 .signup-input {
   padding: 0.5rem 2rem;
   margin-top: 0.5rem;
-  border: 1px solid grey
+  border: 1px solid grey;
+  font-size: 1rem;
 }
 .signup-btn {
   margin-top: 0.5rem;
@@ -152,6 +186,9 @@ footer {
   bottom: 0;
   color: #f62958;
   background-color: #fbf9f5;
+  text-align: right;
+  padding-right: 2rem;
+
 }
 
 img {
@@ -160,6 +197,11 @@ img {
 .about {
   list-style: none;
   text-decoration: none;
+
+}
+.aboutme {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 @media screen and (max-width: 500px){
@@ -178,5 +220,9 @@ img {
     display: block;
     margin: 0 auto;
     margin-top: 1rem;
+  }
+  .grid-container {
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
